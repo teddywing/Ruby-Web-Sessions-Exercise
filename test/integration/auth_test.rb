@@ -31,4 +31,12 @@ class TestAuth < CapybaraTestCase
 
     assert_equal 200, page.status_code
   end
+
+  def test_logout
+    login_with_correct_credentials
+    visit '/logout'
+
+    assert_text 'Login'
+    assert_equal '/', current_path
+  end
 end
