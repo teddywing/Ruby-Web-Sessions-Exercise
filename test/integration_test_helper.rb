@@ -15,4 +15,4 @@ class CapybaraTestCase < Minitest::Unit::TestCase
   end
 end
 
-Capybara.app = App
+Capybara.app = Sinatra::Application.new

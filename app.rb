@@ -1,12 +1,10 @@
-require 'sinatra/base'
+require 'sinatra'
 
 
-class App < Sinatra::Base
-  get '/' do
-    erb :index
-  end
+get '/' do
+  erb :index
+end
 
-  post '/' do
-    'POST works'
-  end
+post '/' do
+  'POST works'
 end
