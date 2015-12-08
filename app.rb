@@ -1,10 +1,27 @@
 require 'sinatra'
 
 
+use Rack::Session::Cookie, :secret => "My session secret which shouldn't be committed to the repo in real life"
+
 get '/' do
-  erb :index
+  if session[:user]
+    "Logged in with user id #{session[:user]}"
+  else
+    erb :index
+  end
 end
 
 post '/' do
-  'POST works'
+  if params[:username] == 'hubertfarnsworth' &&
+     params[:password] == 'secret'
+    session[:user] = 1
+    redirect '/'
+  else
+    'POST works'
+  end
+end
+
+get '/logout' do
+  session[:user] = nil
+  redirect '/'
 end
