@@ -30,6 +30,7 @@ class TestAuth < CapybaraTestCase
     login_with_correct_credentials
 
     assert_equal 200, page.status_code
+    assert_text "You're logged in!"
   end
 
   def test_logout

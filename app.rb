@@ -5,7 +5,7 @@ use Rack::Session::Cookie, :secret => "My session secret which shouldn't be comm
 
 get '/' do
   if session[:user]
-    "Logged in with user id #{session[:user]}"
+    erb :logged_in
   else
     erb :index
   end
