@@ -17,7 +17,7 @@ post '/' do
     session[:user] = 1
     redirect '/'
   else
-    'POST works'
+    'Unrecognized user'
   end
 end
 
