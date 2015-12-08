@@ -1,6 +1,8 @@
-require 'sinatra'
+require 'sinatra/base'
 
 
-get '/' do
-  'Hello World'
+class App < Sinatra::Base
+  get '/' do
+    'Hello World'
+  end
 end
