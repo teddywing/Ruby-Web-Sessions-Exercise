@@ -12,6 +12,8 @@ template.
 With `Rack::Session::Cookie`, the session is accessible via a hash called
 `session`.
 
+The solution is avalilable in the `solution` branch.
+
 
 ## Installing
 Run
