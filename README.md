@@ -35,3 +35,7 @@ Run
 	$ rake
 
 to run the app's tests.
+
+
+## License
+Licensed under the MIT License. See the included LICENSE file.
