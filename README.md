@@ -1,5 +1,5 @@
-Session Exercise
-================
+Web Session Exercise
+====================
 
 This is an exercise designed to help illustrate how sessions can facilitate
 authentication on the web. It was written for one of my students at [The
