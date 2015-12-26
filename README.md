@@ -2,7 +2,8 @@ Session Exercise
 ================
 
 This is an exercise designed to help illustrate how sessions can facilitate
-authentication on the web.
+authentication on the web. It was written for one of my students at [The
+Firehose Project](http://www.thefirehoseproject.com/).
 
 Fill in the route blocks in `app.rb` such that POSTing the accepted user
 credentials to '/' log the user in using the session, and display the logged in
